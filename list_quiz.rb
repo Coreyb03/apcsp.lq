@@ -37,16 +37,16 @@ print bigger_two([1,7],[4,4]) #[1,7]
 def series_up (n)
     nlist = []
     if n == 1
-        return 1
+        return [1]
     end
     (n*(n+1)/2).times do |i|
         i.times do |x|
             nlist.push(1+x)
         end
     end
-    return nlist
+    return nlist.first((n*(n+1)/2))
 end
 puts 
 print series_up(1)
 puts 
-print series_up(2) 
+print series_up(4) 
